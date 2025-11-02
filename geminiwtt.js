@@ -3,7 +3,7 @@ const qrcode = require('qrcode-terminal');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // --- 1. API ve Model Kurulumu ---
-const API_KEY = "AIzaSyB8ZsXIFJcw8lmEWnUGNbPJFNx1OUOfLjc";
+const API_KEY = "";
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
@@ -266,5 +266,6 @@ async function testGemini() {
         console.log("\nLÜTFEN API anahtarını kontrol et veya AĞ BAĞLANTINI (WARP) KONTROL ET.");
     }
 }
+
 
 testGemini();
