@@ -8,9 +8,9 @@ const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 // --- 2. Kişi Listesi ---
-const annem = '905378749636@c.us';
-const babam = '905353607336@c.us';
-const kizkardesim = '905385957336@c.us';
+const annem = 'X1@c.us';
+const babam = 'X2@c.us';
+const kizkardesim = 'X3@c.us';
 const izinliKullanicilar = [annem, babam, kizkardesim];
 
 // --- 3. Botun Beyni (Prompt'lar ve Bilgiler) ---
@@ -279,3 +279,4 @@ async function testGemini() {
 // --- 11. BAŞLANGIÇ ---
 
 testGemini();
+
